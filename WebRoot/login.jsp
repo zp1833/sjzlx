@@ -99,7 +99,6 @@ function checkLogin() {
 							<a href="#" onClick="onLogin()"><img border="0" src="images/login.jpg" width="80" height="20"></a>&nbsp;
 							<a href="#" onclick="javascript:window.close(1)"><img border="0" src="images/close.jpg" width="80" height="20"></a></td>
 						</tr>
-						
 					</table>
 					<table align="center" width="80%" cellpadding="0" cellspacing="0">
 						<tr><td>

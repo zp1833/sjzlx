@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!--移民信息管理-->
+	<package name="ym" extends="struts-default"
+		namespace="/admin/ym">
+		<!-- 添加移民信息 -->
+		<action name="newYmInfo" class="ymInfoAction">
+			<result>/pages/admin/ym/editYmInfo.jsp</result>
+		</action>
+
+		<action name="editYmInfo" class="ymInfoAction"
+			method="edit">
+			<result>/pages/admin/ym/editYmInfo.jsp</result>
+		</action>
+
+		<action name="saveYmInfo" class="ymInfoAction"
+			method="saveYmInfo">
+			<result type="redirect">
+				<![CDATA[
+					listYmInfo.do?model.advCountry=${model.advCountry}&modifyFlag=${modifyFlag}&model.id=${model.id}&definedField=${definedField}&definedSearch=${definedSearch}&currentPageNo=${currentPageNo}&beginAdvDate=${beginAdvDate}&endAdvDate=${endAdvDate}&beginSignDate=${beginSignDate}&endSignDate=${endSignDate}&beginVisitDate=${beginVisitDate}&endVisitDate=${endVisitDate}&showType=${showType}
+				]]>
+			</result>
+		</action>
+
+		<action name="listYmInfo" class="ymInfoAction"
+			method="pageQuery">
+			<result>/pages/admin/ym/listYmInfo.jsp</result>
+		</action>
+
+		<action name="lookYmInfo" class="ymInfoAction"
+			method="edit">
+			<result>/pages/admin/ym/lookYmInfo.jsp</result>
+		</action>
+	</package>
+</struts>
+
+

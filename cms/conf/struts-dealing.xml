@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!--现操作客户管理 -->
+	<package name="dealing" extends="json-default" namespace="/admin/dealinginfo">
+
+		<action name="newDealingInfo" class="dealingInfoAction">
+			<result>/pages/admin/dealing/editDealingInfo.jsp</result>
+		</action>
+		<action name="getMoreInfoFromBrokerage" class="dealingInfoAction" method="getMoreInfoFromBrokerage">
+			<result type="json" name="success">
+				<param name="root">stuInfo</param>
+			</result>
+		</action>
+
+		<action name="editDealingInfo" class="dealingInfoAction" method="edit">
+			<result>/pages/admin/dealing/editDealingInfo.jsp</result>
+		</action>
+
+		<action name="lookDealingInfo" class="dealingInfoAction" method="edit">
+			<result>/pages/admin/dealing/lookDealingInfo.jsp</result>
+		</action>
+
+		<action name="saveDealingInfo" class="dealingInfoAction" method="saveDealingInfo">
+			<result type="redirect">
+				<![CDATA[
+					listDealingInfo.do?isAll=${isAll}&model.toCountry=${model.toCountry}
+				]]>
+			</result>
+		</action>
+
+		<action name="listDealingInfo" class="dealingInfoAction" method="pageQuery">
+			<result>/pages/admin/dealing/listDealingInfo.jsp</result>
+		</action>
+
+	</package>
+</struts>
+
+

@@ -1,0 +1,24 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="global" extends="struts-default">
+		<global-results>
+			<result name="403">/common/403.jsp</result>
+		</global-results>
+	</package>
+	<constant name="struts.custom.i18n.resources" value="application"></constant>
+	<include file="struts-security.xml"></include>
+	<include file="struts-dept.xml"></include>
+	<include file="struts-employee.xml"></include>
+	<include file="struts-log.xml"></include>
+	<include file="struts-stuinfo.xml"></include>
+	<include file="struts-workplan.xml"></include>
+	<include file="struts-tradetel.xml"></include>
+	<include file="struts-assess.xml"></include>
+	<include file="struts-brokerage.xml"></include>
+	<include file="struts-successfulCase.xml"></include>
+	<include file="struts-dealing.xml"></include>
+	<include file="struts-ym.xml"></include>
+</struts>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!--员工考核管理-->
+	<package name="assess" extends="struts-default" namespace="/admin/assess">
+
+		<action name="newAssess" class="assessAction">
+			<result>/pages/admin/assess/editAssess.jsp</result>
+		</action>
+
+		<action name="editAssess" class="assessAction" method="edit">
+			<result>/pages/admin/assess/editAssess.jsp</result>
+		</action>
+		
+		<action name="saveAssess" class="assessAction" method="saveAssess">
+			<result type="redirect">listAssess.do</result>
+			<result name="input">/pages/admin/assess/editAssess.jsp</result>
+		</action> 
+		
+		<action name="listAssess" class="assessAction" method="pageQuery">
+			<result>/pages/admin/assess/listAssess.jsp</result>
+		</action>
+		
+		<action name="editAssessTable" class="assessAction" method="editAssessTable">
+			<result>/pages/admin/assess/editAssessTable.jsp</result>
+		</action>
+		
+		<action name="saveAssessTable" class="assessAction" method="saveAssessTable">
+			<result type="redirect">listAssess.do</result>
+		</action>
+		
+		<action name="lookAssessTable" class="assessAction" method="edit">
+			<result>/pages/admin/assess/lookAssessTable.jsp</result>
+		</action>
+		
+		<action name="addAssessInfo" class="assessAction">
+			<result>/pages/admin/assess/editAssessInfo.jsp</result>
+		</action>
+		
+		<action name="editAssessInfo" class="assessAction" method="editAssessInfo">
+			<result name="look">/pages/admin/assess/lookAssessInfo.jsp</result>
+			<result name="edit">/pages/admin/assess/editAssessInfo.jsp</result>
+		</action>
+		
+		<action name="saveAssessCell" class="assessAction" method="saveAssessCell">
+		</action>
+		
+	</package>
+</struts>
+
+

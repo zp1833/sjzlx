@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!--同行电话管理-->
+	<package name="tradetel" extends="struts-default" namespace="/admin/tradetel">
+		
+		<action name="newTradeTel" class="tradeTelAction">
+			<result>/pages/admin/tradetel/editTradeTel.jsp</result>
+		</action>
+
+		<action name="editTradeTel" class="tradeTelAction" method="edit">
+			<result>/pages/admin/tradetel/editTradeTel.jsp</result>
+		</action>
+		
+		<action name="saveTradeTel" class="tradeTelAction" method="saveTradeTel">
+			<result type="redirect">listTradeTel.do</result>
+		</action>
+		
+		<action name="listTradeTel" class="tradeTelAction" method="pageQuery">
+			<result>/pages/admin/tradetel/listTradeTel.jsp</result>
+		</action>
+		
+	</package>
+</struts>
+
+

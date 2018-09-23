@@ -1,0 +1,123 @@
+.icon-blank{
+	background:url('icons/blank.gif') no-repeat;
+}
+.icon-add{
+	background:url('icons/edit_add.png') no-repeat;
+}
+.icon-conf{
+	background:url('icons/config.png') no-repeat;
+}
+.icon-edit{
+	background:url('icons/pencil.png') no-repeat;
+}
+.icon-totop{
+	background:url('icons/totop.png') no-repeat;
+}
+.icon-downline{
+	background:url('icons/Downline.png') no-repeat;
+}
+.icon-fabuweibo{
+	background:url('icons/fabuweibo.png') no-repeat;
+}
+.icon-remove{
+	background:url('icons/edit_remove.png') no-repeat;
+}
+.icon-save{
+	background:url('icons/filesave.png') no-repeat;
+}
+.icon-pass{
+	background:url('icons/pass.png') no-repeat;
+}
+.icon-nopass{
+	background:url('icons/no_pass.png') no-repeat;
+}
+.icon-view{
+	background:url('icons/view.gif') no-repeat;
+}
+.icon-cut{
+	background:url('icons/cut.png') no-repeat;
+}
+.icon-ok{
+	background:url('icons/ok.png') no-repeat;
+}
+.icon-no{
+	background:url('icons/no.png') no-repeat;
+}
+.icon-cancel{
+	background:url('icons/cancel.png') no-repeat;
+}
+.icon-reload{
+	background:url('icons/reload.png') no-repeat;
+}
+.icon-search{
+	background:url('icons/search.png') no-repeat;
+}
+.icon-print{
+	background:url('icons/print.png') no-repeat;
+}
+.icon-help{
+	background:url('icons/help.png') no-repeat;
+}
+.icon-undo{
+	background:url('icons/undo.png') no-repeat;
+}
+.icon-redo{
+	background:url('icons/redo.png') no-repeat;
+}
+.icon-lock{
+	background:url('icons/lock.png') no-repeat;
+}
+.icon-unlock{
+	background:url('icons/unlock.png') no-repeat;
+}
+.icon-back{
+	background:url('icons/return_button.png') no-repeat;
+}
+.icon-sum{
+	background:url('icons/sum.png') no-repeat;
+}
+.icon-tip{
+	background:url('icons/tip.png') no-repeat;
+}
+.icon-refresh{
+	background:url('icons/refresh.png') no-repeat;
+}
+.icon-export{
+	background:url('icons/xls.gif') no-repeat;
+}
+.icon-import{
+	background:url('icons/import.gif') no-repeat;
+}
+.icon-users{
+	background:url('icons/users.gif') no-repeat;
+}
+.icon-mini-add{
+	background:url('icons/mini_add.png') no-repeat 2px 2px;
+}
+.icon-mini-edit{
+	background:url('icons/mini_edit.png') no-repeat 2px 2px;
+}
+.icon-mini-refresh{
+	background:url('icons/mini_refresh.png') no-repeat 3px 2px;
+}
+.icon-sort{
+	background:url('icons/sort.png') no-repeat;
+}
+.icon-tabplus{
+	background:url('icons/tab_plus.png') no-repeat;
+}
+.icon-user{
+	background:url('icons/user.png') no-repeat;
+}
+.icon-corporation{
+	background:url('icons/corporation.png') no-repeat;
+}
+.icon-contact_member{
+	background:url('icons/contact_member.png') no-repeat;
+}
+.icon-contact_department{
+	background:url('icons/contact_department.png') no-repeat;
+}
+.icon-contact_import{
+	background:url('icons/contact_import.png') no-repeat;
+}

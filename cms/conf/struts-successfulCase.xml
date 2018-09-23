@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!--佣金管理 -->
+	<package name="successfulCase" extends="json-default" namespace="/admin/successfulCase">
+
+		<action name="newSuccessfulCase" class="successfulCaseAction">
+			<result>/pages/admin/successfulCase/editCase.jsp</result>
+		</action>
+		
+		<action name="getMoreInfoFromBrokerage" class="successfulCaseAction" method="getMoreInfoFromBrokerage">
+			<result type="json" name="success">
+				<param name="root">stuInfo</param>
+			</result>
+		</action>
+
+		<action name="editSuccessfulCase" class="successfulCaseAction" method="edit">
+			<result>/pages/admin/successfulCase/editCase.jsp</result>
+		</action>
+
+		<action name="lookSuccessfulCase" class="successfulCaseAction" method="edit">
+			<result>/pages/admin/successfulCase/lookCase.jsp</result>
+		</action>
+
+		<action name="saveSuccessfulCase" class="successfulCaseAction" method="saveSuccessfulCase">
+			<result type="redirect">
+				<![CDATA[
+					listSuccessfulCase.do?isAll=${isAll}&model.toCountry=${model.toCountry}
+				]]>
+			</result>
+		</action>
+
+		<action name="listSuccessfulCase" class="successfulCaseAction" method="pageQuery">
+			<result>/pages/admin/successfulCase/listCase.jsp</result>
+		</action>
+
+	</package>
+</struts>
+
+

@@ -124,9 +124,6 @@ function checkLogin() {
 		</td>
 	</tr>
 </table>
-
 </div>
-
 </body>
-
 </html>
